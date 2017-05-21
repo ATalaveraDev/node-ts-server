@@ -1,0 +1,21 @@
+{
+  "name": "typetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.3",
+    "@types/method-override": "0.0.29"
+  }
+}
