@@ -5,16 +5,6 @@ class Routes {
   private MAX_PER_PAGE: number = 2;
 
   constructor(app: Router) {
-    // app.get('/movies/:page', (req, res) => {
-    //   let pageNumber = req.params.page > 0 ? (req.params.page * this.MAX_PER_PAGE) - 1 : 0;
-    //
-    //   Movie.find(null, null, {limit: this.MAX_PER_PAGE, skip: pageNumber}, () => {
-    //     return res;
-    //   }).then(result => {
-    //     return res.send(result);
-    //   });
-    // });
-
     app.post('/movies', (req, res) => {
       let movie = new Movie();
 
@@ -36,7 +26,7 @@ class Routes {
       Movie.findByIdAndRemove(req.params.id, {}, (req, result) => {
         res.send(result);
       });
-    })
+    });
   }
 
   public static create(app: Router): Routes {
